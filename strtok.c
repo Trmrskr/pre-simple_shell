@@ -7,11 +7,12 @@ int main(void)
 	char *token = NULL;
 
 	token = strtok(str, " ");
+	printf("%s\n", token);
 
-	while (token != NULL)
+/*	while (token != NULL)
 	{
 		printf("%s\n", token);
-		token = strtok(NULL, "./");
-	}
+		token = strtok(NULL, " ");
+	}*/
 	return (0);
 }

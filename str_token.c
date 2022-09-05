@@ -7,10 +7,10 @@ char *_strtok(char *str, const char *delim);
 int main(void)
 {
 /*	char *str = "Betty Butter Bought Some butter";*/
-	char str[] = "This is the ./meningi, ./sanaga and ./abalo";
+	char str[] = " This is the ./meningi, ./sanaga and ./abalo";
 	char *token = NULL;
 
-	token = _strtok(str, " ");
+	token = _strtok(str, ".");
 /*	token = _strtok(NULL, " ");
 	printf("%s\n", token);
 	token = _strtok(NULL, " ");
@@ -29,7 +29,7 @@ int main(void)
 	while (token != NULL)
 	{
 		printf("%s\n", token);
-		token = _strtok(NULL, "./");
+		token = _strtok(NULL, ".");
 	}
 	return (0);
 }
